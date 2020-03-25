@@ -2,12 +2,13 @@
 This project contains collection of samples
 
 ## Prerequisites to build the Dockerfile
-* Install docker
-* Install maven and export JAVA_HOME environment variable
+* Install docker. Test your installation by running `docker --version`
+* Install JDK and maven: Test your installations by running `java -version` and `mvn -version`
+* Export `JAVA_HOME` environment variable
 
 ## Create local repository
-`mvn -Dmaven.repo.local=./repository clean package`
-`tar cf repository.tar.gz ./repository`
+* `mvn -Dmaven.repo.local=./repository clean package`
+* `tar cf repository.tar.gz ./repository`
 
 ## Build the image
 `docker build -t sample .`
