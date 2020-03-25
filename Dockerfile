@@ -10,5 +10,4 @@ EXPOSE 8080
 COPY --from=BUILD /usr/src/app/target/*.jar /opt/target/app.jar
 WORKDIR /opt/target
 
->>>>>>> Using maven base image and adjust image build with maven utilites+ two steps
 ENTRYPOINT ["java","-jar", "app.jar"]
